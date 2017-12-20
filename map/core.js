@@ -1,5 +1,7 @@
 function multiplyBy10 (array) {
- // your code here
+  return array.map(function(element) {
+    return element * 10;
+  })
 };
 
 function shiftRight (array) {
@@ -16,7 +18,7 @@ function doubleMatrix (array) {
 
 module.exports = {
   multiplyBy10: multiplyBy10,
-  shiftRight: shiftRight,
-  onlyVowels: onlyVowels,
-  doubleMatrix: doubleMatrix
+  // shiftRight: shiftRight,
+  // onlyVowels: onlyVowels,
+  // doubleMatrix: doubleMatrix
 };
