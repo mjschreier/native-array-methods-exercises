@@ -1,17 +1,35 @@
 function onlyEven (array) {
-  // your code here
+  return array.filter(function(number) {
+    if(number % 2 === 0) {
+      return number;
+    }
+  })
 };
 
 function onlyOneWord (array) {
-  // your code here
+  return array.filter(function(string) {
+    if(!/.{1,}\ .{1,}/.test(string)) {
+      return string;
+    }
+  })
 };
 
 function positiveRowsOnly (array) {
-  // your code here
+  return array.filter(function(row) {
+    if(row.length === row.filter(function(value) {
+      if(value >= 0){
+        return value;
+    }}).length) {
+      return row;
+    }
+  })
 };
 
+// Still need to finish
 function allSameVowels (array) {
-  // your code here
+  return array.filter(function(word) {
+    if()
+  })
 };
 
 module.exports = {
